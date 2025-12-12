@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "lastname": "Astérix",
+    "firstname": "Le Gaulois",
+    "email": "asterix@villagegaulois.fr",
+    "nickname": null
+  },
+  {
+    "id": 2,
+    "lastname": "Obélix",
+    "firstname": "Menhir",
+    "email": "obelix@villagegaulois.fr",
+    "nickname": null
+  },
+  {
+    "id": 3,
+    "lastname": "Panoramix",
+    "firstname": "Le Druide",
+    "email": "panoramix@villagegaulois.fr",
+    "nickname": null
+  },
+  {
+    "id": 4,
+    "lastname": "Assurancetourix",
+    "firstname": "Le Barde",
+    "email": "assurancetourix@villagegaulois.fr",
+    "nickname": null
+  },
+  {
+    "id": 5,
+    "lastname": "Abraracourcix",
+    "firstname": "Chef",
+    "email": "abraracourcix@villagegaulois.fr",
+    "nickname": null
+  },
+  {
+    "id": 6,
+    "lastname": "Idéfix",
+    "firstname": "Chien",
+    "email": "idefix@villagegaulois.fr",
+    "nickname": "CoolDog"
+  },
+  {
+    "id": 7,
+    "lastname": "Coolix",
+    "firstname": "Maximus",
+    "email": "coolix@villagegaulois.fr",
+    "nickname": "TheChill"
+  }
+]

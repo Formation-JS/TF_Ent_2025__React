@@ -1,0 +1,19 @@
+.welcome {
+    font-family: 'Papyrus';
+
+    &-title {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: hotpink;
+    }
+
+    &-desc {
+        font-style: italic;
+        color: plum;
+    }
+    
+    &-no-use {
+        color: cyan;
+        font-family: 'Comic sans MS';
+    }
+}
