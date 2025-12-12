@@ -1,0 +1,177 @@
+[
+    {
+        "id": 1,
+        "name": "T-shirt basique",
+        "desc": "Un t-shirt confortable en coton bio.",
+        "price": 14.99,
+        "inPromo": false
+    },
+    {
+        "id": 2,
+        "name": "Jean slim",
+        "desc": "Jean extensible à taille haute.",
+        "price": 3999.95,
+        "inPromo": true
+    },
+    {
+        "id": 3,
+        "name": "Sweat capuche",
+        "desc": "Sweat-shirt chaud pour les journées fraîches.",
+        "price": 29.99,
+        "inPromo": false
+    },
+    {
+        "id": 4,
+        "name": "Blazer chic",
+        "desc": "Veste blazer coupe moderne pour une allure élégante.",
+        "price": 59.90,
+        "inPromo": true
+    },
+    {
+        "id": 5,
+        "name": "Robe d’été",
+        "desc": "Robe légère à motifs floraux.",
+        "price": 24.50,
+        "inPromo": false
+    },
+    {
+        "id": 6,
+        "name": "Short en jean",
+        "desc": null,
+        "price": 19.99,
+        "inPromo": true
+    },
+    {
+        "id": 7,
+        "name": "Chemise en lin",
+        "desc": "Chemise respirante idéale pour l’été.",
+        "price": 34.00,
+        "inPromo": false
+    },
+    {
+        "id": 8,
+        "name": "Doudoune légère",
+        "desc": "Veste matelassée et imperméable.",
+        "price": 89.99,
+        "inPromo": true
+    },
+    {
+        "id": 9,
+        "name": "Legging sport",
+        "desc": "Legging extensible pour le fitness.",
+        "price": 22.95,
+        "inPromo": false
+    },
+    {
+        "id": 10,
+        "name": "Pull en laine",
+        "desc": "Pull doux pour l’hiver.",
+        "price": 45.99,
+        "inPromo": true
+    },
+    {
+        "id": 11,
+        "name": "Débardeur uni",
+        "desc": null,
+        "price": 12.50,
+        "inPromo": false
+    },
+    {
+        "id": 12,
+        "name": "Combinaison casual",
+        "desc": "Style décontracté pour tous les jours.",
+        "price": 37.90,
+        "inPromo": true
+    },
+    {
+        "id": 13,
+        "name": "Veste en cuir",
+        "desc": "Veste intemporelle en cuir véritable.",
+        "price": 129.99,
+        "inPromo": false
+    },
+    {
+        "id": 14,
+        "name": "Pantalon chino",
+        "desc": "Look semi-formel avec coupe ajustée.",
+        "price": 42.75,
+        "inPromo": true
+    },
+    {
+        "id": 15,
+        "name": "Jupe plissée",
+        "desc": null,
+        "price": 27.60,
+        "inPromo": false
+    },
+    {
+        "id": 16,
+        "name": "T-shirt graphique",
+        "desc": "Illustration originale et en édition limitée.",
+        "price": 18.20,
+        "inPromo": true
+    },
+    {
+        "id": 17,
+        "name": "Gilet oversize",
+        "desc": "Confort et style réunis.",
+        "price": 33.33,
+        "inPromo": false
+    },
+    {
+        "id": 18,
+        "name": "Maillot de bain",
+        "desc": "Coupe moderne et coloris tendance.",
+        "price": 30,
+        "inPromo": true
+    },
+    {
+        "id": 19,
+        "name": "Salopette en denim",
+        "desc": "Style rétro et pratique.",
+        "price": 49.45,
+        "inPromo": false
+    },
+    {
+        "id": 20,
+        "name": "Veste polaire",
+        "desc": null,
+        "price": 38.88,
+        "inPromo": true
+    },
+    {
+        "id": 21,
+        "name": "Chemisier satin",
+        "desc": "Texture douce et brillante.",
+        "price": 42,
+        "inPromo": false
+    },
+    {
+        "id": 22,
+        "name": "Tunique bohème",
+        "desc": "Couleurs vives et coupe ample.",
+        "price": 31.25,
+        "inPromo": true
+    },
+    {
+        "id": 23,
+        "name": "Jogging molletonné",
+        "desc": null,
+        "price": 29.99,
+        "inPromo": false
+    },
+    {
+        "id": 24,
+        "name": "Parka fourrée",
+        "desc": "Protection thermique optimale.",
+        "price": 79.95,
+        "inPromo": true
+    },
+    {
+        "id": 25,
+        "name": "Crop top dentelle",
+        "desc": "Style romantique et chic.",
+        "price": 21.90,
+        "inPromo": false
+    }
+]
