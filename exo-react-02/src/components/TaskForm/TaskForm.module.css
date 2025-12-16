@@ -1,0 +1,49 @@
+.task-form {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-auto-rows: minmax(1.8em, auto);
+    grid-template-areas:
+        "name name name"
+        "desc desc desc"
+        "prio empty btn";
+    gap: 0.5ch;
+
+    .task-form-name,
+    .task-form-desc,
+    .task-form-prio {
+        width: 100%;
+        display: flex;
+
+        label {
+            width: 6em;
+        }
+        input, textarea {
+            flex-grow: 1;
+            resize: none;
+            font-family: inherit;
+            font-size: 1em;
+        }
+    }
+
+    .task-form-name {
+        grid-area: name;
+    }
+
+    .task-form-desc {
+        grid-area: desc;
+        height: 6em;
+    }
+
+    .task-form-prio {
+        grid-area: prio;
+    }
+
+    .task-form-btn {
+        grid-area: btn;
+
+        button {
+            height: 100%;
+            padding: 0.5ch 1ch;
+        }
+    }
+}

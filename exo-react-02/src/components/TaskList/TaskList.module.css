@@ -1,0 +1,34 @@
+.task-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1ch;
+
+    .task-list-item {
+        list-style: none;
+        border: #9EDFAF solid 0.1ch;
+        border-radius: 1em;
+        padding: 0.5em;
+    }
+
+    .task-title {
+        color: #1F5A38;
+        font-weight: 600;
+    }
+
+    .task-done {
+        border-color: #A8E8B8;
+        background: repeating-linear-gradient(-45deg,
+                #CCF7D4,
+                #CCF7D4 1em,
+                #F8FFF9 1em,
+                #F8FFF9 2em);
+    }
+
+    :global(.urgent)::after {
+        color: crimson;
+        font-weight: normal;
+        content: '(Urgent)';
+    }
+}
