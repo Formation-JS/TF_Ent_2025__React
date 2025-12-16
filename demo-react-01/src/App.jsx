@@ -1,4 +1,5 @@
 import './App.css'
+import DemoComunication from './components/DemoComunication/DemoComunication';
 import DemoState from './components/DemoState/DemoState';
 import PersonnageTable from './components/PersonnageTable/PersonnageTable'
 import Welcome from './components/Welcome/Welcome'
@@ -11,7 +12,9 @@ function App() {
       <h1>Demo 01</h1>
       {/* <Welcome name={'Della'} age={35} /> */}
       {/* <PersonnageTable personnages={data} /> */}
-      <DemoState />
+      {/* <DemoState /> */}
+
+      <DemoComunication />
     </>
   )
 }
