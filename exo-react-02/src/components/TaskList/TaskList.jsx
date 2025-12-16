@@ -1,23 +1,17 @@
 import style from './TaskList.module.css';
 
-export default function TaskList() {
-
-    const tasks = [
-        { id: 1, name: 'Acheter du café', priority: 'urgent', isDone: false, desc: null },
-        { id: 2, name: 'Réaliser l\'exercice', priority: 'normal', isDone: false, desc: 'Créer l\'application « Todo List »' },
-        { id: 4, name: 'Tâche terminé', priority: 'normal', isDone: true, desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem minus eos nesciunt reiciendis illum esse.' },
-    ]
+export default function TaskList({ tasks, onTaskDelete, onTaskComplete }) {
 
     return (
         <ul className={style['task-list']}>
             {tasks.map(task => (
-                <TaskListItem key={task.id} {...task} />
+                <TaskListItem key={task.id} {...task} onDelete={onTaskDelete} onComplete={onTaskComplete}  />
             ))}
         </ul>
     );
 }
 
-function TaskListItem({ name, desc, priority, isDone }) {
+function TaskListItem({ id, name, desc, priority, isDone, onComplete, onDelete }) {
     return (
         <li className={style['task-list-item'] + ' ' + (isDone ? style['task-done'] : '')}>
             <div>
@@ -29,8 +23,8 @@ function TaskListItem({ name, desc, priority, isDone }) {
                 )}
             </div>
             <div>
-                <button disabled={isDone}>Terminer</button>
-                <button>Supprimer</button>
+                <button onClick={() => onComplete(id)} disabled={isDone}>Terminer</button>
+                <button onClick={() => onDelete(id)}>Supprimer</button>
             </div>
         </li>
     );
