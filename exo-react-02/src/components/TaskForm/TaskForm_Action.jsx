@@ -13,7 +13,7 @@ export default function TaskForm_Action({ onTaskSubmit }) {
         const data = Object.fromEntries(formData.entries());
 
         // Test de garde pour la validation des données
-        if (!data.name || !['low', 'normal', 'urgent'].includes(data.prio)) {
+        if (!data.name || !['low', 'normal', 'urgent'].includes(data.priority)) {
             // Envoi d'un state en cas d'erreur
             return {
                 errorMessage: 'Le formulaire est invalide !',
@@ -47,7 +47,7 @@ export default function TaskForm_Action({ onTaskSubmit }) {
             </div>
             <div className={style['task-form-prio']}>
                 <label htmlFor={inputId + 'prio'}>Priorité</label>
-                <select id={inputId + 'prio'} name='prio' defaultValue={state.data?.prio} key={'prio-' + state.data?.prio} >
+                <select id={inputId + 'prio'} name='priority' defaultValue={state.data?.priority} key={'prio-' + state.data?.priority} >
                     <option value="low">Basse</option>
                     <option value="normal">Normal</option>
                     <option value="urgent">Urgent</option>
