@@ -1,12 +1,13 @@
 import { Suspense, use } from 'react';
 import { fetchAllMovie } from '../../services/movie.service';
 import MovieList from '../../components/MovieList/MovieList';
+import LoadingScreen from '../../components/LoadingScreen/LoadingScreen';
 
 export default function MovieListRequester() {
     const moviesPromise = fetchAllMovie();
 
     return (
-        <Suspense fallback={<p>Chargement...</p>}>
+        <Suspense fallback={<LoadingScreen />}>
             <MovieListRequesterInner promise={moviesPromise} />
         </Suspense>
     )
