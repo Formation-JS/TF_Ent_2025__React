@@ -22,7 +22,7 @@ function TaskListItem({ id, name, desc, priority, isDone, onComplete, onDelete }
                     <p>{desc}</p>
                 )}
             </div>
-            <div>
+            <div className={style['task-control']}>
                 <button onClick={() => onComplete(id)} disabled={isDone}>Terminer</button>
                 <button onClick={() => onDelete(id)}>Supprimer</button>
             </div>

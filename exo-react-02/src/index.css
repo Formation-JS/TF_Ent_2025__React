@@ -23,6 +23,17 @@ main {
   padding: 1em;
 }
 
+input,
+textarea,
+select,
+button {
+  resize: none;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.1ch 0.5ch;
+  border-radius: 0.5ch;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

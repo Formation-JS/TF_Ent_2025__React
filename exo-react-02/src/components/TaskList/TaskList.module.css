@@ -10,6 +10,15 @@
         border: #9EDFAF solid 0.1ch;
         border-radius: 1em;
         padding: 0.5em;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-auto-rows: auto;
+
+        .task-control {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5ch;
+        }
     }
 
     .task-title {

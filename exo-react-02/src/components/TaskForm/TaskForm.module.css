@@ -20,11 +20,9 @@
         }
 
         input,
-        textarea {
+        textarea,
+        select {
             flex-grow: 1;
-            resize: none;
-            font-family: inherit;
-            font-size: 1em;
         }
     }
 
