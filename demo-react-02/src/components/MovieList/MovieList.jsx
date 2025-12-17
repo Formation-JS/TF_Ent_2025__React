@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 export default function MovieList({ movies }) {
 
     return (
@@ -14,6 +16,7 @@ function MovieListItem({ id, name, yearRelease, genres, images, real }) {
     return (
         <li>
             <p>{name} ({yearRelease})</p>
+            <Link to={id.toString()}>Detail</Link>
             <p>Réalisateur: {real.firstname} {real.lastname}</p>
             <p>Genre : {genres.join(', ')}</p>
             <img src={images} alt={`Image du film "${name}"`} height='100' />

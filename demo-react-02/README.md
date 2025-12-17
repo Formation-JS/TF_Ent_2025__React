@@ -1,4 +1,4 @@
-# Demo React - Requete vers une Web API
+# Demo React - Requete vers une Web API et Routing
 
 ## Rappel des commandes
 ```
@@ -15,3 +15,10 @@ pnpm create vite@latest
 
 ## Package à installer
 - axios : Requete AJAX (`pnpm i axios`)
+- react-router : Mécanisme de routing (`pnpm i react-router`)
+
+## Routing
+### Package possible pour le routing d'une app client
+- React Router (Déclaratif) _← Choix pour la démo_
+- Tanstack Router
+- Wouter

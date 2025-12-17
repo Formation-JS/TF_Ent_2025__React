@@ -19,7 +19,7 @@ export async function postNewMovie(data) {
     });
 
     // Ne pas faire ça en prod ! (╯°□°）╯︵ ┻━┻
-    await (new Promise(resolve => setTimeout(resolve, 1_000)));
+    // await (new Promise(resolve => setTimeout(resolve, 1_000)));
 
     return result.data;
 }

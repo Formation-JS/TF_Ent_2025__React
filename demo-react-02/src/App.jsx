@@ -1,13 +1,25 @@
+import { Route, Routes } from 'react-router';
 import './App.css';
-import MovieAddForm from './features/MovieAddForm/MovieAddForm';
-import MovieListRequester from './features/MovieListRequester/MovieListRequester';
+import HomeRoute from './routes/Home.route';
+import MovieListRoute from './routes/MovieList.route';
+import MovieFormRoute from './routes/MovieForm.route';
+import Header from './ui/Header/Header';
+import DemoParamRoute from './routes/DemoParam.route';
 
 function App() {
 
   return (
     <>
-      <MovieAddForm />
-      <MovieListRequester />
+      <Header />
+      <main>
+        {/* ↓ Définition du routing avec React-router */}
+        <Routes>
+          <Route index element={<HomeRoute />} />
+          <Route path='movies' element={<MovieListRoute />} />
+          <Route path='movies/add' element={<MovieFormRoute />} />
+          <Route path='demo/:id' element={<DemoParamRoute />} />
+        </Routes>
+      </main>
     </>
   );
 }

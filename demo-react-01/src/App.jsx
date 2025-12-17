@@ -1,6 +1,7 @@
 import './App.css'
 import DemoComunication from './components/DemoComunication/DemoComunication';
 import DemoState from './components/DemoState/DemoState';
+import Horloge from './components/Horloge/Horloge';
 import PersonnageTable from './components/PersonnageTable/PersonnageTable'
 import Welcome from './components/Welcome/Welcome'
 import data from './data/personnage.json';
@@ -15,6 +16,7 @@ function App() {
       {/* <DemoState /> */}
 
       <DemoComunication />
+      <Horloge />
     </>
   )
 }
