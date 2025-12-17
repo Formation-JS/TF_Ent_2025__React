@@ -22,12 +22,20 @@ export default function TodoApp() {
 
     const handleDeleteTask = (id) => {
 
-        setTasks(prevTask => prevTask.filter(task => task.id !== id));
+        setTasks(prevTasks => prevTasks.filter(task => task.id !== id));
     };
 
     const handleCompleteTask = (id) => {
+        // setTasks(prevTasks => prevTasks.map(task => (task.id !== id) ? task : { ...task, isDone: true }));
 
-        setTasks(prevTask => prevTask.map(task => task.id !== id ? task : { ...task, isDone: true }));
+        setTasks(prevTasks => {
+            const nextTasks = structuredClone(prevTasks);
+
+            const indexTarget = nextTasks.findIndex(task => task.id === id);
+            nextTasks[indexTarget].isDone = true;
+
+            return nextTasks;
+        });
     };
 
     return (
