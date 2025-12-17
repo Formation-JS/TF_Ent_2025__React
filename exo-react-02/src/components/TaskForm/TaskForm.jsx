@@ -11,10 +11,17 @@ export default function TaskForm({ onTaskSubmit }) {
     const [name, setName] = useState('');
     const [desc, setDesc] = useState('');
     const [prio, setPrio] = useState('normal');
+    const [errorMessage, setErreurMessage] = useState(null);
 
     // Traitement au submit du formulaire
     const handleSubmit = (event) => {
         event.preventDefault();
+
+        // Test de garde pour la validation des données
+        if (!name || !['low', 'normal', 'urgent'].includes(prio)) {
+            setErreurMessage('Le formulaire est invalide !');
+            return;
+        }
 
         // Envoyer la nouvelle tache au composant parent
         const data = { name, desc, priority: prio };
@@ -24,20 +31,21 @@ export default function TaskForm({ onTaskSubmit }) {
         setName('');
         setDesc('');
         setPrio('normal');
-    }
+        setErreurMessage(null);
+    };
 
     // Le rendu
     return (
         <form className={style['task-form']} onSubmit={handleSubmit}>
-            <div className={style['task-form-name']}>
+            <div className={style['task-form-name'] + ' ' + (errorMessage ? style['task-error'] : '')}>
                 <label htmlFor={inputId + 'name'}>Nom</label>
-                <input id={inputId + 'name'} type='text' 
+                <input id={inputId + 'name'} type='text'
                     value={name} onChange={(e) => setName(e.target.value)} />
             </div>
             <div className={style['task-form-desc']}>
                 <label htmlFor={inputId + 'desc'}>Description</label>
-                <textarea id={inputId + 'desc'} 
-                    value={desc} onChange={(e) => setDesc(e.target.value)}/>
+                <textarea id={inputId + 'desc'}
+                    value={desc} onChange={(e) => setDesc(e.target.value)} />
             </div>
             <div className={style['task-form-prio']}>
                 <label htmlFor={inputId + 'prio'}>Priorité</label>
@@ -49,6 +57,9 @@ export default function TaskForm({ onTaskSubmit }) {
             </div>
             <div className={style['task-form-btn']}>
                 <button type='submit'>Ajouter</button>
+            </div>
+            <div className={style['task-form-error-msg']}>
+                {errorMessage && (<p>Erreur : <span>{errorMessage}</span></p>)}
             </div>
         </form>
     );

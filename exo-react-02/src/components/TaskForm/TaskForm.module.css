@@ -5,7 +5,8 @@
     grid-template-areas:
         "name name name"
         "desc desc desc"
-        "prio empty btn";
+        "prio empty btn"
+        "err err err";
     gap: 0.5ch;
 
     .task-form-name,
@@ -17,7 +18,9 @@
         label {
             width: 6em;
         }
-        input, textarea {
+
+        input,
+        textarea {
             flex-grow: 1;
             resize: none;
             font-family: inherit;
@@ -44,6 +47,21 @@
         button {
             height: 100%;
             padding: 0.5ch 1ch;
+        }
+    }
+
+    .task-form-error-msg {
+        grid-area: err;
+        color: crimson;
+    }
+
+    .task-error {
+        color: crimson;
+
+        input,
+        textarea,
+        select {
+            border-color: crimson;
         }
     }
 }
