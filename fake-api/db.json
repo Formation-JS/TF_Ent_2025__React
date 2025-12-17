@@ -1,109 +1,182 @@
-[
-  {
-    "id": 1,
-    "name": "Inception",
-    "desc": "Un voleur spécialisé dans l'extraction de secrets via les rêves.",
-    "yearRelease": 2010,
-    "real": { "firstname": "Christopher", "lastname": "Nolan" },
-    "genres": ["Science-fiction", "Thriller"],
-    "images": "https://image.tmdb.org/t/p/original/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg"
-  },
-  {
-    "id": 2,
-    "name": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
-    "desc": "Un jeune hobbit doit détruire un anneau maléfique.",
-    "yearRelease": 2001,
-    "real": { "firstname": "Peter", "lastname": "Jackson" },
-    "genres": ["Fantasy", "Aventure"],
-    "images": "https://image.tmdb.org/t/p/original/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg"
-  },
-  {
-    "id": 3,
-    "name": "Pulp Fiction",
-    "desc": "Des histoires criminelles entremêlées dans un style unique.",
-    "yearRelease": 1994,
-    "real": { "firstname": "Quentin", "lastname": "Tarantino" },
-    "genres": ["Crime", "Drame"],
-    "images": "https://image.tmdb.org/t/p/original/dM2w364MScsjFf8pfMbaWUcWrR.jpg"
-  },
-  {
-    "id": 4,
-    "name": "Titanic",
-    "desc": "Une romance tragique à bord du célèbre paquebot.",
-    "yearRelease": 1997,
-    "real": { "firstname": "James", "lastname": "Cameron" },
-    "genres": ["Romance", "Drame"],
-    "images": "https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
-  },
-  {
-    "id": 5,
-    "name": "The Dark Knight",
-    "desc": "Batman affronte le Joker dans une lutte psychologique intense.",
-    "yearRelease": 2008,
-    "real": { "firstname": "Christopher", "lastname": "Nolan" },
-    "genres": ["Action", "Crime"],
-    "images": "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Forrest Gump",
-    "desc": "La vie extraordinaire d'un homme simple traversant l'histoire américaine.",
-    "yearRelease": 1994,
-    "real": { "firstname": "Robert", "lastname": "Zemeckis" },
-    "genres": ["Drame", "Comédie"],
-    "images": "https://image.tmdb.org/t/p/original/saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
-  },
-  {
-    "id": 7,
-    "name": "Interstellar",
-    "desc": "Un groupe d'explorateurs voyage à travers un trou de ver pour sauver l'humanité.",
-    "yearRelease": 2014,
-    "real": { "firstname": "Christopher", "lastname": "Nolan" },
-    "genres": ["Science-fiction", "Aventure"],
-    "images": "https://image.tmdb.org/t/p/original/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Gladiator",
-    "desc": "Un général romain trahi devient gladiateur pour se venger.",
-    "yearRelease": 2000,
-    "real": { "firstname": "Ridley", "lastname": "Scott" },
-    "genres": ["Action", "Drame"],
-    "images": "https://image.tmdb.org/t/p/original/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg"
-  },
-  {
-    "id": 9,
-    "name": "Parasite",
-    "desc": "Deux familles coréennes s'entremêlent dans une satire sociale brillante.",
-    "yearRelease": 2019,
-    "real": { "firstname": "Bong", "lastname": "Joon-ho" },
-    "genres": ["Thriller", "Drame"],
-    "images": "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
-  },
-  {
-    "id": 10,
-    "name": "Avatar",
-    "desc": "Un marine paraplégique découvre un nouveau monde sur Pandora.",
-    "yearRelease": 2009,
-    "real": { "firstname": "James", "lastname": "Cameron" },
-    "genres": ["Science-fiction", "Aventure"],
-    "images": "https://image.tmdb.org/t/p/original/kyeqWdyUXW608qlYkRqosgbbJyK.jpg"
-  },
-  {
-    "id": 11,
-    "name": "Mad Max: Fury Road",
-    "yearRelease": 2015,
-    "real": { "firstname": "George", "lastname": "Miller" },
-    "genres": ["Action", "Post-apocalyptique"],
-    "images": "https://image.tmdb.org/t/p/original/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg"
-  },
-  {
-    "id": 12,
-    "name": "Whiplash",
-    "desc": "Un jeune batteur affronte un professeur tyrannique.",
-    "yearRelease": 2014,
-    "real": { "firstname": "Damien", "lastname": "Chazelle" },
-    "genres": ["Drame"],
-    "images": "https://image.tmdb.org/t/p/original/oPxnRhyAIzJKGUEdSiwTJQBa3NM.jpg"
-  }
-]
+{
+    "movies": [
+        {
+            "id": 1,
+            "name": "Inception",
+            "desc": "Un voleur spécialisé dans l'extraction de secrets via les rêves.",
+            "yearRelease": 2010,
+            "real": {
+                "firstname": "Christopher",
+                "lastname": "Nolan"
+            },
+            "genres": [
+                "Science-fiction",
+                "Thriller"
+            ],
+            "images": "https://image.tmdb.org/t/p/original/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+            "desc": "Un jeune hobbit doit détruire un anneau maléfique.",
+            "yearRelease": 2001,
+            "real": {
+                "firstname": "Peter",
+                "lastname": "Jackson"
+            },
+            "genres": [
+                "Fantasy",
+                "Aventure"
+            ],
+            "images": "https://image.tmdb.org/t/p/original/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Pulp Fiction",
+            "desc": "Des histoires criminelles entremêlées dans un style unique.",
+            "yearRelease": 1994,
+            "real": {
+                "firstname": "Quentin",
+                "lastname": "Tarantino"
+            },
+            "genres": [
+                "Crime",
+                "Drame"
+            ],
+            "images": "https://image.tmdb.org/t/p/original/dM2w364MScsjFf8pfMbaWUcWrR.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Titanic",
+            "desc": "Une romance tragique à bord du célèbre paquebot.",
+            "yearRelease": 1997,
+            "real": {
+                "firstname": "James",
+                "lastname": "Cameron"
+            },
+            "genres": [
+                "Romance",
+                "Drame"
+            ],
+            "images": "https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
+        },
+        {
+            "id": 5,
+            "name": "The Dark Knight",
+            "desc": "Batman affronte le Joker dans une lutte psychologique intense.",
+            "yearRelease": 2008,
+            "real": {
+                "firstname": "Christopher",
+                "lastname": "Nolan"
+            },
+            "genres": [
+                "Action",
+                "Crime"
+            ],
+            "images": "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Forrest Gump",
+            "desc": "La vie extraordinaire d'un homme simple traversant l'histoire américaine.",
+            "yearRelease": 1994,
+            "real": {
+                "firstname": "Robert",
+                "lastname": "Zemeckis"
+            },
+            "genres": [
+                "Drame",
+                "Comédie"
+            ],
+            "images": "https://image.tmdb.org/t/p/original/saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Interstellar",
+            "desc": "Un groupe d'explorateurs voyage à travers un trou de ver pour sauver l'humanité.",
+            "yearRelease": 2014,
+            "real": {
+                "firstname": "Christopher",
+                "lastname": "Nolan"
+            },
+            "genres": [
+                "Science-fiction",
+                "Aventure"
+            ],
+            "images": "https://image.tmdb.org/t/p/original/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Gladiator",
+            "desc": "Un général romain trahi devient gladiateur pour se venger.",
+            "yearRelease": 2000,
+            "real": {
+                "firstname": "Ridley",
+                "lastname": "Scott"
+            },
+            "genres": [
+                "Action",
+                "Drame"
+            ],
+            "images": "https://image.tmdb.org/t/p/original/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Parasite",
+            "desc": "Deux familles coréennes s'entremêlent dans une satire sociale brillante.",
+            "yearRelease": 2019,
+            "real": {
+                "firstname": "Bong",
+                "lastname": "Joon-ho"
+            },
+            "genres": [
+                "Thriller",
+                "Drame"
+            ],
+            "images": "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Avatar",
+            "desc": "Un marine paraplégique découvre un nouveau monde sur Pandora.",
+            "yearRelease": 2009,
+            "real": {
+                "firstname": "James",
+                "lastname": "Cameron"
+            },
+            "genres": [
+                "Science-fiction",
+                "Aventure"
+            ],
+            "images": "https://image.tmdb.org/t/p/original/kyeqWdyUXW608qlYkRqosgbbJyK.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Mad Max: Fury Road",
+            "yearRelease": 2015,
+            "real": {
+                "firstname": "George",
+                "lastname": "Miller"
+            },
+            "genres": [
+                "Action",
+                "Post-apocalyptique"
+            ],
+            "images": "https://image.tmdb.org/t/p/original/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Whiplash",
+            "desc": "Un jeune batteur affronte un professeur tyrannique.",
+            "yearRelease": 2014,
+            "real": {
+                "firstname": "Damien",
+                "lastname": "Chazelle"
+            },
+            "genres": [
+                "Drame"
+            ],
+            "images": "https://image.tmdb.org/t/p/original/oPxnRhyAIzJKGUEdSiwTJQBa3NM.jpg"
+        }
+    ]
+}
